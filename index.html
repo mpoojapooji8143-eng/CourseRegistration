@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for a career-focused online course.">
+    <title>Course Registration | Manastar Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <header class="brand">
+            <a class="brand-mark" href="#" aria-label="Manastar Academy home">
+                <span class="brand-icon" aria-hidden="true">M</span>
+                <span>manastar<span class="brand-accent"> academy</span></span>
+            </a>
+            <span class="secure-note"><span aria-hidden="true">●</span> Your next chapter starts here</span>
+        </header>
+
+        <section class="registration-card" aria-labelledby="page-title">
+            <div class="card-heading">
+                <p class="eyebrow">LEARN WITH PURPOSE</p>
+                <h1 id="page-title">Course registration</h1>
+                <p class="intro">Build the skills to move forward. Tell us a little about yourself and choose the course that fits your goals.</p>
+                <div class="progress-note">
+                    <span class="progress-dot" aria-hidden="true"></span>
+                    <span>Registration <strong>1 of 1</strong></span>
+                    <span class="required-note"><span aria-hidden="true">*</span> Required fields</span>
+                </div>
+            </div>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+                <fieldset class="form-section">
+                    <legend><span class="section-number">01</span> Personal Details</legend>
+                    <p class="section-description">Your details help us personalize your learning experience.</p>
+
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="first-name">First name <span class="required-mark" aria-hidden="true">*</span></label>
+                            <input type="text" id="first-name" name="first-name" autocomplete="given-name" placeholder="e.g. Jordan" minlength="2" maxlength="50" required>
+                        </div>
+                        <div class="field">
+                            <label for="surname">Surname <span class="required-mark" aria-hidden="true">*</span></label>
+                            <input type="text" id="surname" name="surname" autocomplete="family-name" placeholder="e.g. Lee" minlength="2" maxlength="50" required>
+                        </div>
+                        <div class="field">
+                            <label for="mobile">Mobile number <span class="required-mark" aria-hidden="true">*</span></label>
+                            <input type="tel" id="mobile" name="mobile" autocomplete="tel" placeholder="+1 (555) 000-0000" minlength="7" maxlength="20" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email address <span class="required-mark" aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" maxlength="254" required>
+                        </div>
+                        <div class="field">
+                            <label for="password">Create password <span class="required-mark" aria-hidden="true">*</span></label>
+                            <input type="password" id="password" name="password" autocomplete="new-password" placeholder="At least 8 characters" minlength="8" maxlength="64" required>
+                            <small class="field-hint">Use at least 8 characters.</small>
+                        </div>
+                        <div class="field">
+                            <label for="confirm-password">Confirm password <span class="required-mark" aria-hidden="true">*</span></label>
+                            <input type="password" id="confirm-password" name="confirm-password" autocomplete="new-password" placeholder="Enter your password again" minlength="8" maxlength="64" required>
+                        </div>
+                        <div class="field">
+                            <label for="dob">Date of birth <span class="required-mark" aria-hidden="true">*</span></label>
+                            <input type="date" id="dob" name="dob" autocomplete="bday" required>
+                        </div>
+                        <div class="field">
+                            <label for="country">Country <span class="required-mark" aria-hidden="true">*</span></label>
+                            <select id="country" name="country" autocomplete="country-name" required>
+                                <option value="" disabled selected>Select your country</option>
+                                <option value="au">Australia</option>
+                                <option value="br">Brazil</option>
+                                <option value="ca">Canada</option>
+                                <option value="fr">France</option>
+                                <option value="de">Germany</option>
+                                <option value="in">India</option>
+                                <option value="ie">Ireland</option>
+                                <option value="jp">Japan</option>
+                                <option value="ng">Nigeria</option>
+                                <option value="sg">Singapore</option>
+                                <option value="za">South Africa</option>
+                                <option value="gb">United Kingdom</option>
+                                <option value="us">United States</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="field field-wide">
+                            <span class="field-label">Gender <span class="required-mark" aria-hidden="true">*</span></span>
+                            <div class="choice-row" role="radiogroup" aria-label="Gender">
+                                <label class="choice-card" for="gender-male">
+                                    <input type="radio" id="gender-male" name="gender" value="male" required>
+                                    <span class="custom-choice" aria-hidden="true"></span>
+                                    <span>Male</span>
+                                </label>
+                                <label class="choice-card" for="gender-female">
+                                    <input type="radio" id="gender-female" name="gender" value="female">
+                                    <span class="custom-choice" aria-hidden="true"></span>
+                                    <span>Female</span>
+                                </label>
+                                <label class="choice-card" for="gender-custom">
+                                    <input type="radio" id="gender-custom" name="gender" value="custom">
+                                    <span class="custom-choice" aria-hidden="true"></span>
+                                    <span>Custom</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field field-wide">
+                            <label for="picture">Upload picture <span class="optional-note">(optional)</span></label>
+                            <input class="file-input" type="file" id="picture" name="picture" accept="image/*">
+                            <small class="field-hint">A recent profile photo works best.</small>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-section course-section">
+                    <legend><span class="section-number">02</span> Course Details</legend>
+                    <p class="section-description">Choose a course and how you would like to learn.</p>
+
+                    <div class="form-grid">
+                        <div class="field field-wide">
+                            <label for="course">Select course <span class="required-mark" aria-hidden="true">*</span></label>
+                            <select id="course" name="course" required>
+                                <option value="" disabled selected>Choose the course you are interested in</option>
+                                <option value="java-full-stack">Java Full Stack Development</option>
+                                <option value="python-full-stack">Python Full Stack Development</option>
+                                <option value="front-end">Front-End Development</option>
+                                <option value="data-science">Data Science</option>
+                                <option value="web-development">Web Development</option>
+                            </select>
+                        </div>
+                        <div class="field field-wide">
+                            <span class="field-label">Delivery mode</span>
+                            <div class="choice-row">
+                                <label class="choice-card" for="mode-online">
+                                    <input type="checkbox" id="mode-online" name="delivery-mode" value="online">
+                                    <span class="custom-choice" aria-hidden="true"></span>
+                                    <span>Online</span>
+                                </label>
+                                <label class="choice-card" for="mode-offline">
+                                    <input type="checkbox" id="mode-offline" name="delivery-mode" value="offline">
+                                    <span class="custom-choice" aria-hidden="true"></span>
+                                    <span>Offline</span>
+                                </label>
+                            </div>
+                            <small class="field-hint">Choose one or both options.</small>
+                        </div>
+                        <div class="field field-wide">
+                            <label for="comments">Comments <span class="optional-note">(optional)</span></label>
+                            <textarea id="comments" name="comments" rows="4" maxlength="1000" placeholder="Tell us about your goals, questions, or anything else we should know..."></textarea>
+                            <small class="field-hint">Maximum 1,000 characters.</small>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-footer">
+                    <p class="privacy-note"><span aria-hidden="true">◆</span> Your information is kept private and secure.</p>
+                    <div class="button-row">
+                        <button class="button button-secondary" type="reset">Reset</button>
+                        <button class="button button-primary" type="submit">Submit <span aria-hidden="true">→</span></button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <footer class="page-footer">
+            <span>© 2026 Manastar Academy</span>
+            <span>Questions? <a href="mailto:hello@manastar.example">We're here to help</a></span>
+        </footer>
+    </main>
+</body>
+</html>
